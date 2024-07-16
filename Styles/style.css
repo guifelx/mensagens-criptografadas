@@ -75,7 +75,8 @@
     display: flex;
     justify-content: flex-start;
     gap: 24px;
-    padding: 0px 0px 37px 0px;
+    padding: 0;
+    margin: 0px 0px 37px 0px;
     text-align: center;
     width:73,91%;
 }
@@ -83,7 +84,7 @@
 .botao_criptografar {
     background-color: var(--dark-blue);
     width: 328px;
-    padding: 1% 0%;
+    padding: 3% 0%;
     border-radius: 24px;
     font-size: 1rem;
     color: var(--white-color);
@@ -127,7 +128,9 @@
     font-size: 1.5rem;
 }
 
-
+.content_sec2_texto_paragrafo {
+   padding: 1%;
+}
 
 .content_sec2_divimg {
     display: flex;
@@ -138,4 +141,57 @@
 
 .content_sec2_divimg_desenhoimg {
     width: 80%;
+}
+
+
+@media (max-width: 1140px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .content_logoimg {
+       margin: 0;
+    }
+
+    .content_sec1 {
+        padding: 0;
+        margin-left: 40px;
+        width: auto;
+
+    }
+
+    .content_sec1_texto_input {
+        padding-bottom: 220px;
+    }
+
+    .content_sec1_botoes {
+        margin-right: 5%;
+    }
+
+    .botao_criptografar, .botao_descriptografar {
+        width: 100%;
+        
+        padding: 20px 0px;  
+    }
+
+    .content_sec2 {
+        margin: 0px 40px;
+        width: auto;
+        padding: 32px;
+    }
+
+    .content_sec2_divimg {
+        display: none;
+    }
+
+    
+}   
+
+@media (max-width: 475px) {
+    .content_sec1_botoes {
+        flex-direction: column;
+    }
 }
