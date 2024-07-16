@@ -191,7 +191,18 @@
 }   
 
 @media (max-width: 475px) {
+    .content {
+        height: auto;
+    }
+
     .content_sec1_botoes {
         flex-direction: column;
     }
+
+    .content_divlogoimg {
+        width: auto;
+        margin-top: 20%;
+    }
+
+    
 }
