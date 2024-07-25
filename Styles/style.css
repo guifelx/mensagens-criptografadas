@@ -242,9 +242,13 @@
     }
 
     .content_sec2 {
-        height: auto;
+        height: 40vh;
         margin:  0px 40px 15px 40px;
     }
+
+/*     .div_paragrafo_oculto {
+        height: 100%;
+    } */
 }
 
 @media (max-width: 475px) {
