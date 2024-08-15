@@ -10,23 +10,23 @@ function criptografar() {
 
     campoTexto = campoTexto.toLowerCase();
 
-    if (campoTexto.includes('e') != 'E') {
+    if (campoTexto.includes('e')) {
         campoTexto = campoTexto.replaceAll(/e/g, letterEsub);
         /* campoTexto = campoTexto.replace(/e/g, letterEsub) */
     }
-    if (campoTexto.includes('i') != 'I') {
+    if (campoTexto.includes('i')) {
         /* campoTexto = campoTexto.replace(/i/g, letterIsub) */
         campoTexto = campoTexto.replaceAll(/i/g, letterIsub);
     }
 
-    if (campoTexto.includes('a') != 'A') {
+    if (campoTexto.includes('a')) {
         campoTexto = campoTexto.replaceAll(/a/g, letterAsub);
     }
 
-    if (campoTexto.includes('o') != 'O') {
+    if (campoTexto.includes('o')) {
         campoTexto = campoTexto.replaceAll(/o/g, letterOsub);
     }
-    if (campoTexto.includes('u') != 'U') {
+    if (campoTexto.includes('u')) {
         campoTexto = campoTexto.replaceAll(/u/g, letterUsub);
     }
 
@@ -43,6 +43,7 @@ function criptografar() {
 function descriptografar() {
     let campoTexto = document.querySelector('textarea').value;
 
+    campoTexto = campoTexto.toLowerCase();
 
     if (campoTexto.includes(letterEsub)) {
         campoTexto = campoTexto.replaceAll(letterEsub, 'e');
