@@ -8,6 +8,8 @@ let letterUsub = 'ufat';
 function criptografar() {
     let campoTexto = document.querySelector('textarea').value;
 
+    campoTexto = campoTexto.toLowerCase();
+
     if (campoTexto.includes('e') != 'E') {
         campoTexto = campoTexto.replaceAll(/e/g, letterEsub);
         /* campoTexto = campoTexto.replace(/e/g, letterEsub) */
@@ -40,6 +42,7 @@ function criptografar() {
 
 function descriptografar() {
     let campoTexto = document.querySelector('textarea').value;
+
 
     if (campoTexto.includes(letterEsub)) {
         campoTexto = campoTexto.replaceAll(letterEsub, 'e');
@@ -87,4 +90,3 @@ function copiar() {
             console.error('Erro ao copiar', error);
         })
 }
-
