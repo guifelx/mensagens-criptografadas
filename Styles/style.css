@@ -251,6 +251,11 @@
         width: auto;
         margin-top: 20%;
     }
+
+    .botao_copiar, .botao_criptografar, .botao_descriptografar
+    {
+        padding: 6% 0%;
+    }
 }
 
 
